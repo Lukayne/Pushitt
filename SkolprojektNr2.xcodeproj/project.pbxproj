@@ -15,7 +15,6 @@
 		2B4BF2141EF83DAA005FB2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4BF2131EF83DAA005FB2C0 /* Assets.xcassets */; };
 		2B4BF2171EF83DAA005FB2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4BF2151EF83DAA005FB2C0 /* LaunchScreen.storyboard */; };
 		2B4BF2201EF91FF0005FB2C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B4BF21F1EF91FF0005FB2C0 /* GoogleService-Info.plist */; };
-		2B4BF2221EF945E5005FB2C0 /* Mesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BF2211EF945E5005FB2C0 /* Mesage.swift */; };
 		2B4BF2241EF95E4F005FB2C0 /* ButtonTaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BF2231EF95E4F005FB2C0 /* ButtonTaps.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		2B4BF2181EF83DAA005FB2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4BF21E1EF83DB8005FB2C0 /* SkolprojektNr2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkolprojektNr2.entitlements; sourceTree = "<group>"; };
 		2B4BF21F1EF91FF0005FB2C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2B4BF2211EF945E5005FB2C0 /* Mesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesage.swift; sourceTree = "<group>"; };
 		2B4BF2231EF95E4F005FB2C0 /* ButtonTaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTaps.swift; sourceTree = "<group>"; };
 		A8C7F7B805763CCF235F44A7 /* Pods-SkolprojektNr2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkolprojektNr2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkolprojektNr2/Pods-SkolprojektNr2.debug.xcconfig"; sourceTree = "<group>"; };
 		BD74950C269F9464B29DE5BF /* Pods_SkolprojektNr2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkolprojektNr2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +71,6 @@
 				2B4BF21E1EF83DB8005FB2C0 /* SkolprojektNr2.entitlements */,
 				2B4BF20C1EF83DAA005FB2C0 /* AppDelegate.swift */,
 				2B4BF20E1EF83DAA005FB2C0 /* ViewController.swift */,
-				2B4BF2211EF945E5005FB2C0 /* Mesage.swift */,
 				2B4BF2231EF95E4F005FB2C0 /* ButtonTaps.swift */,
 				2B4BF2101EF83DAA005FB2C0 /* Main.storyboard */,
 				2B0EB6C81EF9A8CD0052D37A /* HideKeyBoard.swift */,
@@ -237,7 +234,6 @@
 			files = (
 				2B0EB6C91EF9A8CD0052D37A /* HideKeyBoard.swift in Sources */,
 				2B4BF20F1EF83DAA005FB2C0 /* ViewController.swift in Sources */,
-				2B4BF2221EF945E5005FB2C0 /* Mesage.swift in Sources */,
 				2B4BF20D1EF83DAA005FB2C0 /* AppDelegate.swift in Sources */,
 				2B4BF2241EF95E4F005FB2C0 /* ButtonTaps.swift in Sources */,
 			);

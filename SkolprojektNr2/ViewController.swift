@@ -55,24 +55,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         threatBtn.layer.cornerRadius = 20
         accidentBtn.layer.cornerRadius = 20
         
-        handler = ref?.child("help").observe(.childAdded, with: { (snapshot) in
-            if let item = snapshot.value as? String {
-                self.helpMessage.append(item)
-                self.tableView.reloadData()
-            }
-        })
-        threatHandler = ref?.child("threat").observe(.childAdded, with: { (snapshot) in
-            if let item = snapshot.value as? String {
-                self.threatMessage.append(item)
-                self.tableView.reloadData()
-            }
-        })
-        accidentHandler = ref?.child("accident").observe(.childAdded, with: { (snapshot) in
-            if let item = snapshot.value as? String {
-                self.accidentMessage.append(item)
-                self.tableView.reloadData()
-            }
-        })
+//        handler = ref?.child("help").observe(.childAdded, with: { (snapshot) in
+//            if let item = snapshot.value as? String {
+//                self.helpMessage.append(item)
+//                self.tableView.reloadData()
+//            }
+//        })
+//        threatHandler = ref?.child("threat").observe(.childAdded, with: { (snapshot) in
+//            if let item = snapshot.value as? String {
+//                self.threatMessage.append(item)
+//                self.tableView.reloadData()
+//            }
+//        })
+//        accidentHandler = ref?.child("accident").observe(.childAdded, with: { (snapshot) in
+//            if let item = snapshot.value as? String {
+//                self.accidentMessage.append(item)
+//                self.tableView.reloadData()
+//            }
+//        })
         
         
 
@@ -133,7 +133,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if messageTf.text != "" {
             ref?.child("accident").childByAutoId().setValue(messageTf.text!)
             setMessageTf()
-            print(accidentMessage)
             tableView.reloadData()
         } else {
             print("User retarded")
@@ -223,6 +222,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let item = snapshot.value as? String {
                 
                 self.accidentMessage.append(item)
+                print(self.accidentMessage)
                 
                 
                 
@@ -239,7 +239,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return sectionTitle.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return accidentMessage.count
+
         return (sectionMessages[section]?.count)!
     }
 
