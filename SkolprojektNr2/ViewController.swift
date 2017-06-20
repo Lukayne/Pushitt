@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var helpMessage: [String] = []
     var threatMessage: [String] = []
-    var accidentMessage: [String] = []
+    var accidentMessage: [String] = ["Hu"]
     
     var sectionMessages: [Int: [String]] = [:]
     
@@ -215,7 +215,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }, withCancel: nil)
     }
     func observeAccidentMessage() {
-        self.accidentMessage.removeAll()
+      //  self.accidentMessage.removeAll()
         
         accidentHandler = ref?.child("accident").observe(.childAdded, with: { (snapshot) in
             
