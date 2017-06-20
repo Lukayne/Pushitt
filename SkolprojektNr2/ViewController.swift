@@ -111,7 +111,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func helpBtn(_ sender: Any) {
         if messageTf.text != "" {
-            ref?.child("help").childByAutoId().setValue("Help: " + messageTf.text!)
+            ref?.child("help").childByAutoId().setValue(messageTf.text!)
             setMessageTf()
         } else {
             print("User retarded")
@@ -119,7 +119,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     @IBAction func threat(_ sender: Any) {
         if messageTf.text != "" {
-            ref?.child("threat").childByAutoId().setValue("Threat: " + messageTf.text!)
+            ref?.child("threat").childByAutoId().setValue(messageTf.text!)
             setMessageTf()
         } else {
             print("User retarded")
@@ -131,7 +131,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func accident(_ sender: Any) {
         if messageTf.text != "" {
-            ref?.child("accident").childByAutoId().setValue("Accident: " + messageTf.text!)
+            ref?.child("accident").childByAutoId().setValue(messageTf.text!)
             setMessageTf()
             print(accidentMessage)
             tableView.reloadData()
