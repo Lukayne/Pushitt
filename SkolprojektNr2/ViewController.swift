@@ -133,7 +133,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if messageTf.text != "" {
             ref?.child("accident").childByAutoId().setValue(messageTf.text!)
             setMessageTf()
-            tableView.reloadData()
         } else {
             print("User retarded")
         }
@@ -184,6 +183,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let item = snapshot.value as? String {
                 
                 self.helpMessage.append(item)
+                print(self.helpMessage)
                 
                 
                 
@@ -203,6 +203,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let item = snapshot.value as? String {
                 
                 self.threatMessage.append(item)
+                print(self.threatMessage)
                 
                 
                 
@@ -215,7 +216,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }, withCancel: nil)
     }
     func observeAccidentMessage() {
-      //  self.accidentMessage.removeAll()
+        self.accidentMessage.removeAll()
         
         accidentHandler = ref?.child("accident").observe(.childAdded, with: { (snapshot) in
             
